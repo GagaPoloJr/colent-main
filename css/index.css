@@ -3,6 +3,9 @@
   --c-white: #fff;
   --c-black: #000;
   --c-lightGray: #efeae3;
+  --e-global-color-text: #595959;
+  --e-global-color-446591e: #C9CAC0;
+  
 }
 
 * {
@@ -152,7 +155,7 @@ h3,
   font-size: 32px;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
   color: var(--c-white) !important;
 }
 
@@ -190,12 +193,12 @@ h3,
 /* card form join */
 .card_form_join {
   margin-top: -100px;
-  background-color: #0B0500 !important;
+  background-color: #0b0500 !important;
 }
 
-.join_title {
+/* .join_title {
   font-size: 33.6px;
-}
+} */
 
 .card_form_join form input {
   height: 40px;
@@ -376,8 +379,8 @@ h3,
 }
 
 .our_team_sosmed {
-  border: 1px solid #0B0500;
-  background-color: #0B0500;
+  border: 1px solid #0b0500;
+  background-color: #0b0500;
   color: var(--c-yellow);
   width: 30px;
   height: 30px;
@@ -390,7 +393,7 @@ h3,
 
 .our_team_sosmed:hover {
   background-color: var(--c-yellow);
-  color: #0B0500;
+  color: #0b0500;
 }
 
 /* end our team */
@@ -541,7 +544,74 @@ h3,
 
 /* end single blog */
 
+
+/* faq */
+.accordion-item{
+  border: unset !important;
+  
+}
+
+.accordion{
+  font-family: poppinsRegular;
+
+  --bs-accordion-btn-focus-box-shadow: unset !important;
+}
+
+.accordion-button{
+  background-color: var(--c-lightGray) !important;
+  margin-bottom: 20px;
+  user-select: none;
+}
+
+.accordion-body{
+  color: var(--e-global-color-text);
+  
+}
+
+.accordion-button[aria-expanded="true"] {
+  background-color: var(--c-yellow) !important;
+}
+
+
+.contact-form-faq{
+  margin-top: 150px !important;
+}
+
+.choose-us-faq{
+  margin-top: 150px !important;
+  margin-bottom: 150px !important;
+}
+/* end faq */
+
 /* contact */
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  border: 1px solid #666;
+  border-radius: 3px;
+  padding: 16px;
+  transition: all 0.3s;
+  font-family: poppinsRegular;
+}
+
+.contact input:focus,
+.contact select:focus,
+.contact textarea:focus {
+  border: 1px solid #666;
+}
+
+.contact button {
+  background-color: var(--c-yellow);
+  font-weight: bold;
+  padding: 15px 10px;
+  color: var(--c-white);
+}
+
+.contact button:hover{
+  color: var(--c-yellow);
+  background-color: var(--c-black);
+}
 .contact_icon {
   border: 1px solid var(--c-yellow);
   border-radius: 100%;
@@ -560,8 +630,11 @@ h3,
 }
 
 .contact_form {
-  border: 1px solid #595959 !important;
-  border-radius: 4px !important;
+  padding: 16px 16px 16px 16px;
+  background-color: #fff;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: var(--e-global-color-text);
 }
 
 /* 404 */
@@ -590,7 +663,7 @@ h3,
 
 /* footer */
 .bg_footer {
-  background-color: #0B0500;
+  background-color: #0b0500;
 }
 
 .sosmed_icon_footer {
@@ -632,7 +705,6 @@ h3,
 
 /* tablet */
 @media (min-width: 768px) {
-
   /* navbar */
   .banner_home {
     height: 100vh;
@@ -757,7 +829,6 @@ h3,
 
 /* desktop */
 @media (min-width: 1024px) {
-
   /* content header home */
   .content_header_home {
     width: 60%;

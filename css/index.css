@@ -1,0 +1,861 @@
+:root {
+  --c-yellow: #d2ac6e;
+  --c-white: #fff;
+  --c-black: #000;
+  --c-lightGray: #efeae3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#parent {
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url(../assets/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: poppinsSemiBold;
+  src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: spaceGroteskMedium;
+  src: url(../assets/fonts/SpaceGrotesk-Medium.ttf);
+}
+
+@font-face {
+  font-family: spaceGroteskSemiBold;
+  src: url(../assets/fonts/SpaceGrotesk-SemiBold.ttf);
+}
+
+/* global */
+.text_grotesk {
+  font-family: spaceGroteskMedium;
+}
+
+p,
+.nav-item a,
+.card_form_join .card-body,
+.ourProfile_item,
+.card_article {
+  font-family: poppinsRegular;
+}
+
+.content_header_aboutUs,
+.content_header_singleCourse,
+.content_header_singleBlog,
+.content_header_404 button {
+  font-family: poppinsSemiBold;
+}
+
+h5,
+h1,
+h3,
+.ourService_card a,
+.course_list_card a,
+.text_more_class,
+.data_colent p,
+.free_consultan_desc button,
+.info_detail button,
+.card_article a,
+.article,
+.content_header_404 h1 {
+  font-family: spaceGroteskMedium;
+}
+
+.image-overlay {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.8;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+
+/* navbar */
+.banner_home {
+  height: 120vh;
+}
+
+.navbar-brand img {
+  width: 75%;
+}
+
+.nav-item {
+  background-color: var(--c-black);
+}
+
+.nav-item .btn {
+  padding-right: 0 !important;
+  border: none !important;
+}
+
+.nav-link {
+  color: var(--c-white) !important;
+}
+
+.nav-item:hover,
+.dropdown-menu a:hover {
+  background-color: var(--c-yellow);
+  color: var(--c-white);
+}
+
+.nav-item a {
+  padding-left: 10px;
+}
+
+/* end navbar */
+
+/* content header home */
+.content_header_home h5:nth-child(1) {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.content_header_home p:nth-child(2) {
+  font-size: 14px;
+  color: var(--c-lightGray);
+}
+
+.button_colent {
+  border-radius: 3px !important;
+  letter-spacing: 0.2em;
+}
+
+.content_header_home button {
+  background-color: var(--c-yellow);
+  font-size: 16px;
+  color: var(--c-white);
+  width: 50%;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+}
+
+.content_header_home button:hover {
+  background-color: var(--c-black);
+}
+
+/* end content header home */
+
+/* content Header except AboutUs */
+.content_header_aboutUs h1,
+.content_header_singleCourse h1,
+.content_header_singleBlog h1 {
+  font-size: 32px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+  color: var(--c-white) !important;
+}
+
+.breadcrumb li.active {
+  color: var(--c-yellow);
+}
+
+/* content Header except AboutUs */
+
+/* sosmed */
+.sosmed {
+  position: absolute;
+  bottom: 0;
+}
+
+.sosmed_icon {
+  border: 1px solid var(--c-yellow);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.line_sosmed {
+  width: 2px;
+  margin-left: 50px;
+  height: 50px;
+}
+
+/* end sosmed */
+
+/* card form join */
+.card_form_join {
+  margin-top: -100px;
+  background-color: #0B0500 !important;
+}
+
+.join_title {
+  font-size: 33.6px;
+}
+
+.card_form_join form input {
+  height: 40px;
+}
+
+.input_border {
+  border-radius: 3px;
+}
+
+.card_form_join form button {
+  background-color: var(--c-yellow);
+  font-weight: bold;
+  color: var(--c-white);
+}
+
+.card_form_join form button:hover {
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+
+/* end card form join */
+
+/* our profile */
+.ourProfile_img {
+  height: 250px;
+}
+
+.ourProfile_experience {
+  top: 10px;
+  left: 10px;
+  background-color: var(--c-lightGray);
+}
+
+/* .ourProfile_experience span {
+  color: var(--c-yellow);
+} */
+
+.ourProfile_desc p:nth-child(1) {
+  font-weight: 400;
+}
+
+.ourProfile_desc button {
+  background-color: var(--c-yellow);
+  color: var(--c-white);
+}
+
+.ourProfile_desc button:hover {
+  background-color: var(--c-black);
+  color: var(--c-white);
+}
+
+/* end our profile */
+
+/* our service */
+.ourService_card a {
+  color: var(--c-black);
+}
+
+.ourService_card a:hover {
+  color: var(--c-yellow);
+}
+
+/* end our service */
+
+/* brand */
+.brand img:nth-child(1),
+.data img:nth-child(1) {
+  height: 400px;
+  object-fit: cover;
+}
+
+/* end brand */
+
+/* course list */
+.course_list p:nth-child(2) {
+  width: 70%;
+}
+
+.course_list_card a {
+  background-color: var(--c-yellow);
+  border: none;
+  border-radius: 3px;
+  letter-spacing: 0.2em;
+  height: 50px;
+  padding-top: 13px;
+}
+
+.course_list_card a:hover {
+  background-color: var(--c-black);
+}
+
+.course_list_icon {
+  color: var(--c-yellow);
+}
+
+.price_course {
+  background-color: var(--c-yellow);
+}
+
+/* .text_more_class span {
+  color: var(--c-yellow);
+} */
+
+.text_more_class a:hover {
+  color: var(--c-yellow) !important;
+}
+
+/* end course list */
+
+/* testimoni */
+
+.testimoni_desc_user p:nth-child(2) {
+  color: var(--c-yellow);
+}
+
+/* end testimoni */
+
+/* step */
+.img_card_step {
+  height: 100px;
+  width: 149px;
+}
+
+.line_Step {
+  height: 2px;
+  background-color: var(--c-lightGray);
+}
+
+.line_sequere {
+  width: 25px;
+  height: 25px;
+  top: -12px;
+  left: 47%;
+  background-color: var(--c-yellow);
+}
+
+/* end step */
+
+/* data */
+.data_colent span {
+  color: var(--c-yellow);
+}
+
+/* end data */
+
+/* our team */
+.our_team_desc button {
+  background-color: var(--c-yellow);
+  height: 50px;
+}
+
+.our_team_desc button:hover {
+  background-color: var(--c-black);
+}
+
+.our_team_card img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.desc_user_our_team {
+  height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+}
+
+.our_team_card:hover .desc_user_our_team {
+  transform: translateY(0);
+}
+
+.desc_user_our_team p:nth-child(2) {
+  color: var(--c-yellow);
+}
+
+.our_team_sosmed {
+  border: 1px solid #0B0500;
+  background-color: #0B0500;
+  color: var(--c-yellow);
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.our_team_sosmed:hover {
+  background-color: var(--c-yellow);
+  color: #0B0500;
+}
+
+/* end our team */
+
+/* free consultan */
+.free_consultan {
+  background-image: url("../assets/Banner_freeConsultan.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px !important;
+}
+
+.free_consultan_desc button {
+  background-color: var(--c-yellow);
+  letter-spacing: 0.2em;
+  height: 50px;
+  width: 50px;
+  border-radius: 3px;
+}
+
+.free_consultan_desc button:hover {
+  background-color: var(--c-white);
+  color: var(--c-black) !important;
+}
+
+/* end free consultan */
+
+/* article and blog */
+.img_article {
+  height: 200px;
+  cursor: pointer;
+}
+
+.img_article img {
+  transition: all 300ms;
+}
+
+.img_article img:hover {
+  scale: 1.1;
+}
+
+.card_article a {
+  color: var(--c-black);
+}
+
+.card_article a:hover {
+  color: var(--c-yellow);
+}
+
+.icon_date,
+.icon_comment {
+  color: var(--c-yellow);
+}
+
+/* end article and blog */
+
+/* choose us */
+.banner_chooseUs {
+  height: 200px;
+}
+
+/* end choose us */
+
+/* choose us */
+.progress-bar {
+  background-color: var(--c-yellow) !important;
+}
+
+/* end choose us */
+
+/* single course */
+.virtual_asisten_img {
+  height: 300px;
+}
+
+.info_detail button {
+  background-color: var(--c-yellow);
+  color: var(--c-white);
+  height: 50px;
+  width: 176px;
+}
+
+.info_detail button:hover {
+  background-color: var(--c-white);
+  color: var(--c-black);
+}
+
+.icon_info {
+  color: #c9cac0;
+}
+
+.icon_plus {
+  color: var(--c-yellow);
+}
+
+/* end single course */
+
+/* single blog */
+.single_blog_banner {
+  height: 300px;
+}
+
+.search input {
+  outline: none;
+  background-color: var(--c-lightGray);
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+}
+
+.search i {
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-yellow);
+  cursor: pointer;
+}
+
+.img_recent_blog {
+  height: 130px;
+  cursor: pointer;
+}
+
+.img_recent_blog img {
+  transition: all 200ms;
+}
+
+.img_recent_blog img:hover {
+  scale: 1.1;
+}
+
+.follow_us_on_icon {
+  color: var(--c-yellow);
+  border: 1px solid var(--c-black);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* end single blog */
+
+/* contact */
+.contact_icon {
+  border: 1px solid var(--c-yellow);
+  border-radius: 100%;
+  background-color: var(--c-yellow);
+  color: #fff;
+  font-size: 35px;
+}
+
+.contact_icon:hover {
+  color: #000;
+}
+
+.contact_border {
+  border: 1px solid #595959;
+  border-radius: 10px;
+}
+
+.contact_form {
+  border: 1px solid #595959 !important;
+  border-radius: 4px !important;
+}
+
+/* 404 */
+.content_header_404 h1 {
+  font-size: 160px;
+}
+
+.content_header_404 h2 {
+  font-family: spaceGroteskMedium;
+  font-size: 52px;
+  color: var(--c-yellow);
+}
+
+.content_header_404 button {
+  background-color: var(--c-yellow);
+  color: var(--c-white);
+  width: 20%;
+  display: inline;
+}
+
+.content_header_404 button:hover {
+  background-color: var(--c-black);
+}
+
+/* footer */
+.bg_footer {
+  background-color: #0B0500;
+}
+
+.sosmed_icon_footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--c-yellow);
+  border: 1px solid var(--c-yellow);
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.item_footer hr {
+  color: var(--c-yellow);
+  height: 2px;
+  border: 1px solid;
+}
+
+.content_footer {
+  cursor: pointer;
+}
+
+.content_footer i:nth-child(1) {
+  color: var(--c-yellow);
+}
+
+.content_footer:hover {
+  i:nth-child(1) {
+    color: var(--c-white);
+  }
+
+  p:nth-child(2) {
+    color: var(--c-yellow);
+  }
+}
+
+/* end footer */
+
+/* tablet */
+@media (min-width: 768px) {
+
+  /* navbar */
+  .banner_home {
+    height: 100vh;
+  }
+
+  .navbar-brand img {
+    width: 75%;
+  }
+
+  /* content header home */
+  .content_header_home {
+    width: 70%;
+  }
+
+  .content_header_home h5:nth-child(1) {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .content_header_home p:nth-child(2) {
+    font-size: 20px;
+  }
+
+  .content_header_home button {
+    width: 50%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  /* end content header home */
+
+  /* sosmed */
+  .sosmed {
+    right: -20%;
+    bottom: 20%;
+  }
+
+  .line_sosmed {
+    height: 100px;
+  }
+
+  .sosmed_list {
+    margin-left: 25px;
+  }
+
+  /* card form join */
+  .card_form_join .card-body h4 {
+    font-size: 33.6px;
+  }
+
+  .card_form_join .card-body p {
+    font-size: 20px;
+  }
+
+  .card_form_join form input,
+  .card_form_join form button {
+    height: 48px;
+  }
+
+  /* end card form join */
+
+  /* our profile */
+  .ourProfile_img {
+    height: 400px;
+  }
+
+  .ourProfile_desc button {
+    width: 30%;
+    height: 50px;
+  }
+
+  /* end our profile */
+
+  /* course list */
+  .course_list p:nth-child(2) {
+    width: 42%;
+  }
+
+  /* end course list */
+
+  /* brand */
+  .brand img:nth-child(1),
+  .data img:nth-child(1) {
+    height: 300px;
+  }
+
+  /* end brand */
+
+  /* our team */
+  .our_team_card img {
+    height: 300px;
+  }
+
+  /* end our team */
+
+  /* single blog */
+  .single_blog_banner {
+    height: 400px;
+  }
+
+  .img_recent_blog {
+    height: 110px;
+  }
+
+  /* end single blog */
+}
+
+@media (min-width: 992px) {
+  .nav-item {
+    background-color: transparent;
+  }
+
+  .nav-item:hover {
+    background-color: transparent;
+    color: var(--c-white);
+  }
+
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+  /* content header home */
+  .content_header_home {
+    width: 60%;
+  }
+
+  .content_header_home p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .content_header_home button {
+    width: 30%;
+    /* height: 40px; */
+    font-size: 16px;
+  }
+
+  /* end content header home */
+
+  /* sosmed */
+  .sosmed {
+    right: -60%;
+    bottom: 15%;
+  }
+
+  .sosmed_list {
+    margin-left: 33px;
+  }
+
+  /* card form join */
+  .card_form_join {
+    margin-top: -50px;
+  }
+
+  .card_form_join .card-body h4 {
+    font-size: 33.6px;
+  }
+
+  .card_form_join .card-body p {
+    font-size: 16px;
+  }
+
+  /* .card_form_join form input,
+  .card_form_join form button {
+    height: 40px;
+  } */
+
+  /* end card form join */
+
+  /* our profile */
+  .ourProfile_img {
+    height: 450px;
+  }
+
+  .ourProfile_desc button {
+    width: 30%;
+    /* height: 40px; */
+  }
+
+  /* end our profile */
+
+  /* testimoni */
+  .testimoni_img_user img {
+    width: 70px;
+  }
+
+  /* end testimoni */
+
+  /* choose us */
+  .banner_chooseUs {
+    height: 250px;
+  }
+
+  /* end choose us */
+
+  /* single course */
+  .virtual_asisten_img {
+    height: 400px;
+  }
+
+  /* end single course */
+}
+
+/* animation number counter our profile */
+@property --num_experience {
+  syntax: "<integer>";
+  inherits: true;
+  initial-value: 15;
+}
+
+.number_year_experience::before {
+  counter-reset: my-counter var(--num_experience);
+  content: counter(my-counter);
+  animation: count 3s ease-in-out alternate;
+}
+
+@keyframes count {
+  from {
+    --num_experience: 0;
+  }
+
+  to {
+    --num_experience: 15;
+  }
+}
